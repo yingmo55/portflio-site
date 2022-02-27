@@ -1,0 +1,31 @@
+/* Hero */
+#hero {
+    min-height: calc(93vh - 11px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#hero-deco {
+    background-color: #3F90BE;
+    height: max(300px, 30vh);
+    width: max(300px, 30vh);
+    border-radius: 25px;
+}
+
+#hero-text{
+    max-width: max(40%, 40vw);
+    padding: 20px;
+}
+
+#hero-text > * {
+    margin: 5px 0;
+    
+}
+
+#heroDescription {
+    font-weight: 500;
+    font-size: 1.3rem;
+    line-height: 1.7;
+}
