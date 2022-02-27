@@ -1,0 +1,20 @@
+ /* Projects */
+#projectShowcase {
+    display: block;
+    min-height: 100vh;
+    max-width: 80vw;
+    padding: 10vh 10vw;
+    background-color: #185172;
+}
+
+#showcase {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#projectShowcase h2 {
+    text-align: center;
+    color: white;
+}
