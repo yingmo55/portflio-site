@@ -6,11 +6,13 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
+  max-width: 100vw;
 }
 
 /*Additional Reset and Initialzie */
 html{
   scroll-behavior: smooth;
+  scroll-padding-top: calc(7vh + 5px);
 }
 
 button {

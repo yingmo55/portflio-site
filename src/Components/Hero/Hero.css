@@ -1,6 +1,6 @@
 /* Hero */
 #hero {
-    min-height: calc(93vh - 11px);
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;

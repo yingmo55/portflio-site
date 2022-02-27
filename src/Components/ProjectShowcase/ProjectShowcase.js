@@ -8,6 +8,8 @@ function ProjectShowcase () {
         <h2>Projects Showcase</h2>
         <div id="showcase">
         <Project />
+        <Project />
+        <Project />
         </div>
       </section>
     )
