@@ -1,11 +1,12 @@
 /*Footer*/
 #footer {
     background-color: #185172;
-    height: 30vh;
+    height: calc(30vh);
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    padding-bottom: 50px;
 }
 
 #sitemap > ul li {
@@ -27,6 +28,7 @@ address {
     display: flex;
     align-items: center;
     font-style: italic;
+    flex-wrap: wrap;
 }
 
 address > p {
