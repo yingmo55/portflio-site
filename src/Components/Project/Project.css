@@ -32,7 +32,8 @@
     cursor: pointer;
 }
 
-#projectShowcase h2 {
+.project p, 
+.project h3 {
     text-align: center;
     color: white;
 }
