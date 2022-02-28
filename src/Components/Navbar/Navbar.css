@@ -5,11 +5,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 10px 5px;
     position: fixed;
     top: 0;
     width: 100vw;
     background-color: aliceblue;
+    padding-bottom: 5px;
 }
 
 #header > *{
@@ -77,9 +77,9 @@
 
 /* Media Queries */
 
-@media screen and (max-aspect-ratio: 7 / 10) {
+@media screen and (max-aspect-ratio: 8 / 10), (max-width: 800px) {
     #siteLogo {
-        font-size: 2em;
+        font-size: 1.5em;
     }
     #burgerNav{
         display: block;

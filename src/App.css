@@ -44,3 +44,7 @@ a {
   text-decoration: none;
   font-family: 'JetBrains Mono', monospace;
 }
+
+main > section ~ section {
+  min-height: 900px;
+}
