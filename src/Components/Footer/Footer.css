@@ -1,0 +1,36 @@
+/*Footer*/
+#footer {
+    background-color: #185172;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#sitemap > ul li {
+    display: inline;
+    padding: 0 10px;
+}
+
+.contact-icon {
+    height: 30px;
+    width: 30px;
+    padding: 5px;
+}
+
+footer .navLink {
+    text-decoration: underline;
+}
+
+address {
+    display: flex;
+    align-items: center;
+    font-style: italic;
+}
+
+address > p {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
