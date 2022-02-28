@@ -4,7 +4,7 @@ import './Navbar.css';
 function Navbar () {
     return (
         <header id="header">
-        <h1>yingyimo.dev</h1>
+        <p id="siteLogo">yingyimo.dev</p>
         <nav>
           <button id="burgerNav"></button>
           <div id="navMenu">
