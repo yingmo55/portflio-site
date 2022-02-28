@@ -1,0 +1,13 @@
+#skills > section {
+    margin: 20px;
+}
+
+#skills > section > * {
+    margin: 20px;
+    text-align: center;
+}
+
+.skill-tags {
+    display: flex;
+    align-items: center;
+}

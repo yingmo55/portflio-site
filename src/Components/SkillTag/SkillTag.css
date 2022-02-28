@@ -1,0 +1,12 @@
+ /*Skill Tag*/
+.skill-tag {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.skill-icon {
+    height: 30px;
+    width:30px;
+}
