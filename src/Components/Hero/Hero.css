@@ -1,10 +1,19 @@
+/* Font */
+#hero-text > h1 {
+    font-size: 2em;
+}
+
 /* Hero */
+
 #hero {
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    width: 100vw;
+    max-width: 100%;
+    padding-top: calc(7vh + 5px);
 }
 
 #hero-deco {
@@ -28,4 +37,54 @@
     font-weight: 500;
     font-size: 1.3rem;
     line-height: 1.7;
+}
+
+#typingEffect {
+    max-width: fit-content;
+    display: inline-flex;
+    font-size: inherit;
+    font-family: inherit;
+    color: blue;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 2s steps(6) infinite alternate;
+}
+
+#underscore {
+    font-size: inherit;
+    animation: blinkingUnderscore 1s linear  infinite;
+}
+
+@keyframes typing {
+    0% {
+        width: 0;
+    }
+    20% {
+        width: 0;
+    }
+    80% {
+        width: 50%;
+    }
+    100% {
+        width: 50%;
+    }
+}
+@keyframes blinkingUnderscore {
+    0%{
+        visibility: hidden;
+    }
+    50%{
+        visibility: hidden;
+    }
+    100%{
+        visibility: visible;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #hero-text{
+        max-width: 80vw;
+        padding: 20px;
+        text-align: center;
+    }
 }
