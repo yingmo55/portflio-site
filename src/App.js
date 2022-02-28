@@ -1,17 +1,13 @@
 import './App.css';
-import Footer from './Components/Footer/Footer';
-import Hero from './Components/Hero/Hero';
 import Navbar from './Components/Navbar/Navbar';
-import ProjectShowcase from './Components/ProjectShowcase/ProjectShowcase';
-import Skills from './Components/Skills/Skills';
+import Footer from './Components/Footer/Footer';
+import LandingPage from './Pages/Landing/Landing';
 
 function App() {
   return (
     <div className="App">
       <Navbar />
-      <Hero />
-      <ProjectShowcase />
-      <Skills />
+      <LandingPage />
       <Footer />
     </div>
   );
