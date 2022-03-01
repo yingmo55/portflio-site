@@ -1,12 +1,19 @@
 import React from 'react';
 import './Project.css';
 
-function Project () {
+function Project (props) {
+
+const { title, src, desc } = props;
+
+const bgImage = {
+    backgroundImage: "url(" + src + ")",
+}
+
     return (
         <section className="project">
-            <div className="project-preview"></div>
-            <h3>Title</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed enim ut sem viverra aliquet eget. Bibendum est ultricies integer quis. Id donec ultrices tincidunt arcu non sodales.</p>
+            <div className="project-preview" style={bgImage}></div>
+            <h3>{title}</h3>
+            <p>{desc}</p>
         </section>
     )
 }
