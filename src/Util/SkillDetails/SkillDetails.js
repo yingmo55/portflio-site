@@ -8,18 +8,18 @@ import reactLogo from '../../assets/icons/Skills/react.svg';
 import bootstrapLogo from '../../assets/icons/Skills/bootstrap.svg';
 
 
-const languageClass = new SkillDetails('Language', 'I can program in...');
+const languageClass = new SkillDetails('Languages', 'I can program in...');
 
 languageClass.skills = ['HTML', htmlLogo];
 languageClass.skills = ['CSS', cssLogo];
 languageClass.skills = ['JavaScript', javaScriptLogo];
 languageClass.skills = ['python', pythonLogo];
 
-const frameworkClass = new SkillDetails('Framework', 'I can use these framework...');
+const frameworkClass = new SkillDetails('Frameworks', 'I can use these framework...');
 frameworkClass.skills = ['React', reactLogo]
 frameworkClass.skills = ['Bootstrap', bootstrapLogo]
 
-const toolsClass = new SkillDetails('Tool', 'I use these tools and software...');
+const toolsClass = new SkillDetails('Tools', 'I use these tools and software...');
 toolsClass.skills = ['Git']
 toolsClass.skills = ['Visual Studio Code']
 toolsClass.skills = ['Adobe Photoshop']
