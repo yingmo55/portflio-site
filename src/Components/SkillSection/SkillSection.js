@@ -2,13 +2,15 @@ import React from 'react';
 import './SkillSection.css';
 import SkillTag from '../SkillTag/SkillTag';
 
-function SkillSection () {
+function SkillSection (props) {
+    const { title, description, skills } = props;
+
     return (
         <section id="language">
-        <h3>Language</h3>
-        <p>I can program in...</p>
+        <h3>{title}</h3>
+        <p>{description}</p>
         <div className="skill-tags">
-            <SkillTag />
+            <SkillTag skills={skills}/>
         </div>
       </section>
     )
