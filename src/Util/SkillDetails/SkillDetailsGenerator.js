@@ -2,17 +2,14 @@ export default class SkillDetails {
     constructor(title, description){
         this.title = title;
         this.description = description;
-        this._skills = {}; 
+        this._skills = []; 
     }
     get skills() {
         return this._skills;
     }
 
     set skills([name, src=null]) {
-        skills[name] = {
-            name: name,
-            src: src
-        }
+        this.skills.push({name: name,src: src});
     }
 
     getSkills () {

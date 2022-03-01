@@ -8,23 +8,37 @@ import reactLogo from '../../assets/icons/Skills/react.svg';
 import bootstrapLogo from '../../assets/icons/Skills/bootstrap.svg';
 
 
-const language = new SkillDetails('Language', 'I can program in...');
+const languageClass = new SkillDetails('Language', 'I can program in...');
 
-language.skills(['HTML', htmlLogo])
-language.skills(['CSS', cssLogo])
-language.skills(['JavaScript', javaScriptLogo])
-language.skills(['python', pythonLogo])
+languageClass.skills = ['HTML', htmlLogo];
+languageClass.skills = ['CSS', cssLogo];
+languageClass.skills = ['JavaScript', javaScriptLogo];
+languageClass.skills = ['python', pythonLogo];
 
-const framework = new SkillDetails('Framework', 'I can use these framework...');
-framework.skills(['React', reactLogo]);
-framework.skills(['Bootstrap', bootstrapLogo]);
+const frameworkClass = new SkillDetails('Framework', 'I can use these framework...');
+frameworkClass.skills = ['React', reactLogo]
+frameworkClass.skills = ['Bootstrap', bootstrapLogo]
 
-const tools = new SkillDetails('Tool', 'I use these tools and software...');
-tools.skills(['Git']);
-tools.skills(['Visual Studio Code']);
-tools.skills(['Adobe Photoshop']);
-tools.skills(['Adobe InDesign']);
-tools.skills(['Adobe XD']);
+const toolsClass = new SkillDetails('Tool', 'I use these tools and software...');
+toolsClass.skills = ['Git']
+toolsClass.skills = ['Visual Studio Code']
+toolsClass.skills = ['Adobe Photoshop']
+toolsClass.skills = ['Adobe InDesign']
+toolsClass.skills = ['Adobe XD']
 
+const language = {
+    ...languageClass.getSkills(), 
+    skills: languageClass.skills
+}
+
+const framework = {
+    ...frameworkClass.getSkills(), 
+    skills: frameworkClass.skills
+}
+
+const tools = {
+    ...toolsClass.getSkills(),
+    skills: toolsClass.skills
+}
 
 export {language, framework, tools};
