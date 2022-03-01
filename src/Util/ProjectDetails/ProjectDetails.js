@@ -6,7 +6,7 @@ import whatToLearnPreview from '../../assets/images/previews/Which-language-firs
 //new projectDetails(name, tools=[], previewSrc='', shortDescription, longDescription='');
 
 const calculator = new projectDetails('calculator', ['React.js', 'CSS'], calculatorPreview, 'A calculator app built with React.js')
-const todoList = new projectDetails('To-do List', ['React.js', 'CSS'], todoListPreview, 'A todo list app built with React.js')
-const whatToLearn = new projectDetails('What to Learn First', ['React.js', 'CSS'], whatToLearnPreview, 'An interactive quiz that helps determing which programming language to learn first, built in React.js')
+const todoList = new projectDetails('to-do List', ['React.js', 'CSS'], todoListPreview, 'A todo list app built with React.js')
+const whatToLearn = new projectDetails('what to Learn First', ['React.js', 'CSS'], whatToLearnPreview, 'An interactive quiz that helps determing which programming language to learn first, built in React.js')
 
 export {calculator, todoList, whatToLearn};

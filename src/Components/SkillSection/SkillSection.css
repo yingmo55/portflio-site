@@ -1,5 +1,5 @@
 #skills > section {
-    margin: 20px;
+    margin: 20px 0;
 }
 
 #skills > section > * {
@@ -10,4 +10,6 @@
 .skill-tags {
     display: flex;
     align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
 }

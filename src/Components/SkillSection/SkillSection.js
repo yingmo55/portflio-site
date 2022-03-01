@@ -6,7 +6,7 @@ function SkillSection (props) {
     const { title, description, skills } = props;
 
     return (
-        <section id="language">
+        <section id={title}>
         <h3>{title}</h3>
         <p>{description}</p>
         <div className="skill-tags">

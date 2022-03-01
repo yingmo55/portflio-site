@@ -3,7 +3,7 @@
     align-self: flex-start;
     max-width: 400px;
     height: 400;
-    margin: 20px 0;
+    margin: 20px 10px;
     padding: 10px;
 }
 
@@ -16,8 +16,8 @@
 }
 
 .project-preview {
-    width: 350px;
-    height: 200px;
+    width: min(70vw, 350px);
+    height: min(40vw, 200px);
     background-color: #3F90BE;
     border-radius: 25px;
     margin: auto;
@@ -41,4 +41,5 @@
 .project > p {
     font-size: 1.2rem;
     line-height: 1;
+    max-width: min(70vw, 350px);
 }
