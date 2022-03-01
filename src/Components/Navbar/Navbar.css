@@ -43,8 +43,9 @@
 }
 
 #navMenu .navLink {
-    color: pink;
+    color: rgb(20, 24, 29);
     padding: 10px;
+    font-weight: 600;
 }
 
 #navMenu .navLink:hover {

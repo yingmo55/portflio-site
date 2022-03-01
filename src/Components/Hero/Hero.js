@@ -10,7 +10,7 @@ function Hero () {
 
     return (
         <section id="hero">
-            <div class='hero-content'>
+            <div className='hero-content'>
                 <div id="hero-deco"></div>
                 <div id="hero-text">
                     <h1>Hi, I am <br/>{name1}<p id='typingEffect'>{name2}</p><span id='underscore'>_</span>:<br/>
