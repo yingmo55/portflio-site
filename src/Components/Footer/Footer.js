@@ -17,10 +17,10 @@ function Footer () {
         </div>
         <nav id="sitemap">
           <ul>
-            <li><a className="navLink" href="#">Home</a></li>
+            <li><a className="navLink" href="/#">Home</a></li>
             <li><a className="navLink" href="#projectShowcase">Projects</a></li>
             <li><a className="navLink" href="#skills">Skills</a></li>
-            <li><a className="navLink">Contact</a></li>
+            <li><a className="navLink" href="/#">Contact</a></li>
           </ul>
         </nav>
       </footer>
