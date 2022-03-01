@@ -1,6 +1,6 @@
 export default class projectDetails {
     constructor(name, tools=[], previewSrc='', shortDescription, longDescription=''){
-        this.title = name;
+        this.title = name[0].toUpperCase() + name.slice(1) ;
         this.tools = tools;
         this.previewSrc = previewSrc; //src
         this.shortDescription = shortDescription;
