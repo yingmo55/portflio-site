@@ -36,3 +36,7 @@ address > p {
     display: flex;
     align-items: center;
 }
+
+address > p a {
+    padding-left: 5px;
+}
