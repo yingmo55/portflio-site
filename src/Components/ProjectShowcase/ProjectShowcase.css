@@ -1,6 +1,8 @@
  /* Projects */
 #projectShowcase {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     width: 100%;
     padding: 10vh 0;
     background-color: #185172;
@@ -17,4 +19,15 @@
 #projectShowcase h2 {
     text-align: center;
     color: white;
+}
+
+.moreProjectBtn {
+    width: fit-content;
+    align-self: center;
+    transition: transform 0.2s ease-in-out;
+}
+
+.moreProjectBtn:hover {
+    cursor: pointer;
+    transform: scale(1.2);
 }

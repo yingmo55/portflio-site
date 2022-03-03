@@ -11,13 +11,13 @@ function ProjectShowcase () {
 
     return (
         <section id="projectShowcase">
-        <h2>Projects</h2>
-        <div id="showcase">
-        <Project title={calculatorInfo.title} src={calculatorInfo.src} desc={calculatorInfo.shortDescription} />
-        <Project title={todoListInfo.title} src={todoListInfo.src} desc={todoListInfo.shortDescription} />
-        <Project title={whatToLearnInfo.title} src={whatToLearnInfo.src} desc={whatToLearnInfo.shortDescription} />
-        <button>More projects here</button>
-        </div>
+          <h2>Projects</h2>
+          <div id="showcase">
+            <Project title={calculatorInfo.title} src={calculatorInfo.src} desc={calculatorInfo.shortDescription} />
+            <Project title={todoListInfo.title} src={todoListInfo.src} desc={todoListInfo.shortDescription} />
+            <Project title={whatToLearnInfo.title} src={whatToLearnInfo.src} desc={whatToLearnInfo.shortDescription} />
+          </div>
+          <button class='moreProjectBtn'>More projects here</button>
       </section>
     )
 }
