@@ -5,7 +5,7 @@ function Navbar () {
   const ref = useRef(null);
   const [isResize, setIsResize] = useState(null);
   const [ navMenuStyle, setNavMenuStyle ] = useState(null);
-  const [ burgerNavStyle, setBurgerNavStyle ] =useState(null);
+  const [ burgerNavStyle, setBurgerNavStyle ] = useState(null);
 
   const mobileNavBar = () => {
     if (navMenuStyle === 'none') {
@@ -33,12 +33,11 @@ function Navbar () {
         });
         
         return () => {
-            window.removeEventListener('resize',  ()=>{
-              setIsResize(ref.current.offsetWidth)
-              showNav()
-            });
+          window.removeEventListener('resize',  ()=>{
+          showNav()
+        });
         }
-      }, [isResize, showNav])
+      }, [isResize])
 
     return (
         <header id="header" ref={ref}>
