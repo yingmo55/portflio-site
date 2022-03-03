@@ -4,22 +4,25 @@ import './Navbar.css';
 function Navbar () {
   const ref = useRef(null);
   const [isResize, setIsResize] = useState(null);
-  const navMenu =document.getElementById('navMenu');
-  const burgerNav = document.getElementById('burgerNav');
+  const [ navMenuStyle, setNavMenuStyle ] = useState(null);
+  const [ burgerNavStyle, setBurgerNavStyle ] =useState(null);
+
   const mobileNavBar = () => {
-      navMenu.style.display = navMenu.style.display === 'none' ? 'flex' : 'none';
+    if (navMenuStyle === 'none') {
+      setNavMenuStyle('flex')
+    } else {
+      setNavMenuStyle ('none')
+    }
   }
 
   const showNav = () => {
     const width = ref.current.offsetWidth;
-    if (navMenu){
       if(width > 800) {
-        burgerNav.style.display = 'none';
-        navMenu.style.display = 'flex'
+        setBurgerNavStyle ('none')
+        setNavMenuStyle('flex')
       } else {
-        navMenu.style.display = 'none';
-        burgerNav.style.display = 'block';
-      }
+        setBurgerNavStyle ('block')
+        setNavMenuStyle('none')
     } }
 
     // updates if the screen resizes
@@ -41,8 +44,8 @@ function Navbar () {
         <header id="header" ref={ref}>
         <p id="siteLogo">yingyimo.dev</p>
         <nav>
-          <button id="burgerNav" onClick={mobileNavBar}></button>
-          <div id="navMenu">
+          <button id="burgerNav" onClick={mobileNavBar} style={{display: burgerNavStyle}}></button>
+          <div id="navMenu" style={{display: navMenuStyle}}>
             <ul id='navUl'>
               <li><a className="navLink" href="/#">Home</a></li>
               <li><a className="navLink" href="#projectShowcase">Projects</a></li>
