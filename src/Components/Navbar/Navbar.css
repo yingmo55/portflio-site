@@ -104,7 +104,7 @@
     #navMenu > ul li{
         margin: 0;
     }
-    #navLink {
+    .navLink {
     width: 100vw;
     }
 }
