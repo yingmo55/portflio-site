@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
+import NavLinks from '../../Util/NavLinks/NavLinks';
 import './Navbar.css';
 
 function Navbar () {
@@ -45,12 +46,7 @@ function Navbar () {
         <nav>
           <button id="burgerNav" onClick={mobileNavBar} style={{display: burgerNavStyle}}></button>
           <div id="navMenu" style={{display: navMenuStyle}}>
-            <ul id='navUl'>
-              <li><a className="navLink" href="/#">Home</a></li>
-              <li><a className="navLink" href="#projectShowcase">Projects</a></li>
-              <li><a className="navLink" href="#skills">Skills</a></li>
-              <li><a className="navLink" href="/#">Contact</a></li>
-            </ul>
+            <NavLinks />
           </div>
         </nav>
       </header>

@@ -1,4 +1,7 @@
 import React from 'react';
+
+import NavLinks from '../../Util/NavLinks/NavLinks';
+
 import './Footer.css';
 import linkedinLogo from '../../assets/icons/contact/linkedin.svg';
 import githubLogo from '../../assets/icons/contact/github.svg';
@@ -16,12 +19,7 @@ function Footer () {
           </address>
         </div>
         <nav id="sitemap">
-          <ul>
-            <li><a className="navLink" href="/#">Home</a></li>
-            <li><a className="navLink" href="#projectShowcase">Projects</a></li>
-            <li><a className="navLink" href="#skills">Skills</a></li>
-            <li><a className="navLink" href="/#">Contact</a></li>
-          </ul>
+          <NavLinks />
         </nav>
       </footer>
     )
