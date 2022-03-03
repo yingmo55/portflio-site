@@ -79,12 +79,15 @@
     border-radius: 0%;
     font-size: inherit;
     transition: all 1s linear;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 #hero-buttons > button:hover {
     cursor: pointer;
+}
+#hero-buttons a {
+    color: inherit;
+    font-family: inherit;
+    display: flex;
+    align-items: center;
 }
 
 .right-angle-brackets {
