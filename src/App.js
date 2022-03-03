@@ -5,13 +5,13 @@ import LandingPage from './Pages/Landing/Landing';
 
 function App() {
   return (
-    <div className="App">
+    <>
       <Navbar />
       <main>
       <LandingPage />
       </main>
       <Footer />
-    </div>
+    </>
   );
 }
 
