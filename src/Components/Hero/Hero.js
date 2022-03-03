@@ -18,8 +18,18 @@ function Hero () {
                     <p id="heroDescription">{shortbio}</p>
                 </div>
                 <div id='hero-buttons'>
-                    <button>{<img src={rightArrow} className='right-angle-brackets' alt='right arrow' />}my works</button>
-                    <button><img src={rightArrow} className='right-angle-brackets' alt='right arrow' />how to reach me</button>
+                    <button>
+                        <a href='#projectShowcase'>
+                            <img src={rightArrow} className='right-angle-brackets' alt='right arrow' />
+                            my works
+                        </a>
+                    </button>
+                    <button>
+                        <a href='/#'>
+                            <img src={rightArrow} className='right-angle-brackets' alt='right arrow' />
+                            how to reach me
+                        </a>
+                    </button>
                 </div>
             </div>
         <div id='hero-background'></div>
