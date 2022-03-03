@@ -5,7 +5,6 @@ function Navbar () {
   const ref = useRef(null);
   const [isResize, setIsResize] = useState(null);
   const navMenu =document.getElementById('navMenu');
-  const navUl = document.getElementById('navUl');
   const burgerNav = document.getElementById('burgerNav');
   const mobileNavBar = () => {
       navMenu.style.display = navMenu.style.display === 'none' ? 'flex' : 'none';
@@ -14,22 +13,28 @@ function Navbar () {
   const showNav = () => {
     const width = ref.current.offsetWidth;
     if (navMenu){
-      if(width < 800) {
-        navMenu.style.display = 'none';
-        burgerNav.style.display = 'block';
-      } else {
+      if(width > 800) {
         burgerNav.style.display = 'none';
         navMenu.style.display = 'flex'
+      } else {
+        navMenu.style.display = 'none';
+        burgerNav.style.display = 'block';
       }
     } }
 
     // updates if the screen resizes
     useEffect(() => {
-        window.addEventListener('resize', setIsResize);
-        showNav()
-        return(() => {
-            window.removeEventListener('resize', setIsResize);
-        })
+        window.addEventListener('resize', ()=>{
+          setIsResize(ref.current.offsetWidth)
+          showNav()
+        });
+        
+        return () => {
+            window.removeEventListener('resize',  ()=>{
+              setIsResize(ref.current.offsetWidth)
+              showNav()
+            });
+        }
       }, [isResize, showNav])
 
     return (
