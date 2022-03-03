@@ -1,0 +1,28 @@
+.contactForm {
+    margin-top: calc(7vh + 5px);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contactForm input[type=text] {
+    background-color: beige;
+}
+.contactForm * {
+    margin: 10px;
+}
+
+.contactForm input[type=text],
+.contactForm textarea {
+    border: 1px solid grey;
+    padding: 10px;
+}
+
+.contactForm textarea {
+    resize: none;
+}
+
+.required-asterisk {
+    color: red;
+    margin: 0;
+}
