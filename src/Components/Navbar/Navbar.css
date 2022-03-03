@@ -2,6 +2,7 @@
 #header {
     border-bottom: 1px solid gray;
     height: calc(7vh + 5px);
+    min-height: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -10,6 +11,7 @@
     width: 100vw;
     background-color: aliceblue;
     padding-bottom: 5px;
+    z-index: 4;
 }
 
 #header > *{
@@ -18,18 +20,18 @@
 
 #siteLogo {
     font-family: 'JetBrains Mono', monospace;
-    font-size: 2.5rem;
+    font-size: 2.1rem;
 }
 
 #burgerNav {
     display: none;
-}
-
-#burgerNav {
-    /* background: url('../icons/bars.svg') no-repeat; */
+    background: url('../../assets/icons/bars.svg') no-repeat;
     height: 40px;
     width: 40px;
+    padding: 0;
+    border-radius: 0;
 }
+
 #burgerNav:hover {
     cursor: pointer;
 }
@@ -43,6 +45,7 @@
 }
 
 #navMenu .navLink {
+    display: inline-block;
     color: rgb(20, 24, 29);
     padding: 10px;
     font-weight: 600;
@@ -82,10 +85,26 @@
     #siteLogo {
         font-size: 1.5em;
     }
-    #burgerNav{
+    /* For mobile Display */
+    #burgerNav {
         display: block;
     }
     #navMenu {
         display: none;
+        position: absolute;
+        left: 0;
+        top: calc(7vh + 11px);
+        flex-flow: column wrap;
+        background-color: aliceblue;
+    }
+    #navMenu > ul {
+        width: 100vw;
+        flex-flow: column wrap;
+    }
+    #navMenu > ul li{
+        margin: 0;
+    }
+    #navLink {
+    width: 100vw;
     }
 }
