@@ -1,8 +1,8 @@
 import React from 'react';
 import './Hero.css';
+import rightArrow from '../../assets/icons/angle-right.svg';
 
 function Hero () {
-
     const name1 = "Ying";
     const name2 = 'yi Mo'; //for the typing animation
     const title = "A Front-end developer";
@@ -18,8 +18,8 @@ function Hero () {
                     <p id="heroDescription">{shortbio}</p>
                 </div>
                 <div id='hero-buttons'>
-                    <button>my works</button>
-                    <button>how to reach me</button>
+                    <button>{<img src={rightArrow} className='right-angle-brackets' alt='right arrow' />}my works</button>
+                    <button><img src={rightArrow} className='right-angle-brackets' alt='right arrow' />how to reach me</button>
                 </div>
             </div>
         <div id='hero-background'></div>

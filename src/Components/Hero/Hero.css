@@ -76,8 +76,31 @@
 #hero-buttons > button {
     background-color: rgba(41, 156, 209, 0.822);
     color: whitesmoke;
+    border-radius: 0%;
+    font-size: inherit;
+    transition: all 1s linear;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#hero-buttons > button:hover {
+    cursor: pointer;
 }
 
+.right-angle-brackets {
+    display: inline-block;
+    margin-right: 5px;
+    height: 18px;
+    transition: transform 0.3s;
+    fill: white;
+}
+
+#hero-buttons > button:hover .right-angle-brackets {
+    color: black;
+    transform: rotate(90deg);
+}
+
+/* Background Elements */
 
 #hero-background {
     height: 180px;
