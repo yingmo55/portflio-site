@@ -1,42 +1,20 @@
 /*Footer*/
 #footer {
-    background-color: #185172;
-    height: calc(30vh);
+    background-color: #2e75d3;
+    min-height: min(300px, 25vh);
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    padding-bottom: 50px;
-}
-
-#sitemap > ul li {
-    display: inline;
-    padding: 0 10px;
-}
-
-.contact-icon {
-    height: 30px;
-    width: 30px;
-    padding: 5px;
-}
-
-footer .navLink {
-    text-decoration: underline;
-}
-
-address {
-    display: flex;
-    align-items: center;
-    font-style: italic;
     flex-wrap: wrap;
+    padding: 35px 0;
 }
 
-address > p {
-    padding: 10px;
+#footer h2 {
+    font-size: calc(10px + 2vmin);
+    font-weight: inherit;
+}
+
+.contact-icon-set {
     display: flex;
-    align-items: center;
-}
-
-address > p a {
-    padding-left: 5px;
 }
