@@ -1,0 +1,20 @@
+.navLink {
+    display: inline-block;
+    color: rgb(20, 24, 29);
+    padding: 10px;
+    font-weight: 600;
+}
+
+#navMenu .navLink:hover {
+    background-color: #3F90BE;
+}
+
+#navMenu .navLink:active {
+    color: white;
+    background-color: #1c3c4e;
+}
+
+.active-link {
+    font-weight: 800;
+    color: blue;
+}

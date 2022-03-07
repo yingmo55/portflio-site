@@ -44,7 +44,7 @@
     margin: 10px;
 }
 
-#navMenu .navLink {
+.navLink {
     display: inline-block;
     color: rgb(20, 24, 29);
     padding: 10px;

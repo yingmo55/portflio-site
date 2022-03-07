@@ -1,12 +1,14 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
+import './NavLinks.css';
 
 export default function NavLinks() {
     return (
         <ul>
-          <li><a className="navLink" href="/">Home</a></li>
-          <li><a className="navLink" href="#projectShowcase">Projects</a></li>
-          <li><a className="navLink" href="#skills">Skills</a></li>
-          <li><a className="navLink" href="/contact">Contact</a></li>
+          <li><NavLink activeClassName='active-link' className="navLink" to="/">Home</NavLink></li>
+          <li><NavLink activeClassName='active-link' className="navLink" to="#projectShowcase">Projects</NavLink></li>
+          <li><NavLink activeClassName='active-link' className="navLink" to="#skills">Skills</NavLink></li>
+          <li><NavLink activeClassName='active-link' className="navLink" to="/contact">Contact</NavLink></li>
         </ul>
     )
 }
