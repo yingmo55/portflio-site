@@ -46,7 +46,8 @@ main > section ~ section {
 }
 
 main {
-  min-height: min(600px, 60vh);
+  margin-top: calc(6vh + 15px);
+  min-height: 800px;
 }
 
 button {
