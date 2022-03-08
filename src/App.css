@@ -1,7 +1,7 @@
 /*Additional Reset and Initialzie */
 html{
   scroll-behavior: smooth;
-  scroll-padding-top: calc(7vh + 5px);
+  scroll-padding-top: calc(6vh + 5px);
   max-width: 100vw;
   background-color: aliceblue;
 }
@@ -30,14 +30,15 @@ h3 {
 }
 
 p, a, span {
-  font-family: 'Zen Kaku Gothic Antique';
+  font-family: 'Roboto', sans-serif;
   font-size: 16px;
+  font-weight: 300;
 }
 
 a {
   color: #61dafb;
   text-decoration: none;
-  font-family: 'JetBrains Mono', monospace;
+  font-style: italic;
 }
 
 main > section ~ section {
