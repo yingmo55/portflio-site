@@ -4,17 +4,22 @@
     padding: 10px;
     font-weight: 600;
 }
-
-#navMenu .navLink:hover {
+.navLink:hover {
     background-color: #3F90BE;
 }
-
-#navMenu .navLink:active {
+.navLink:active {
     color: white;
     background-color: #1c3c4e;
 }
 
-.active-link {
-    font-weight: 800;
-    color: blue;
+#nav-Links {
+    display: inline-flex;
+}
+
+.navLink {
+    display: inline-block;
+    color: rgb(20, 24, 29);
+    font-weight: 400;
+    font-style: normal;
+    margin: 10px;
 }
