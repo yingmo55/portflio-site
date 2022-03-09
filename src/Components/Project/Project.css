@@ -25,11 +25,31 @@
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
+    position: relative;
 }
 
 .project-preview:hover{
     transform: scale(1.2);
     cursor: pointer;
+}
+
+.projectLink{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0%;
+    border: inherit;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 200ms ease-in-out 100ms;
+    color: white;
+}
+
+.projectLink:hover {
+    backdrop-filter: blur(2px);
+    opacity: 100%;
 }
 
 .project p, 
