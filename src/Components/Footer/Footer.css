@@ -1,18 +1,16 @@
 /*Footer*/
 #footer {
     background-color: #2e75d3;
-    min-height: min(300px, 25vh);
+    min-height: 10vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    padding: 35px 0;
 }
 
-#footer h2 {
-    font-size: calc(10px + 2vmin);
-    font-weight: inherit;
+hr {
+    width: 70%;
 }
 
 .contact-icon-set {

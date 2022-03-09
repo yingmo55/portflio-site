@@ -26,7 +26,7 @@ function Footer () {
 
     return (
         <footer id="footer">
-          <h2>Stay in touch:</h2>
+          <hr />
           <div className='contact-icon-set'>
             <SocialButton contactInfo={contactInfo} />
           </div>
