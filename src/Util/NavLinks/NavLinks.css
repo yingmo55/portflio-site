@@ -23,3 +23,8 @@
     font-style: normal;
     margin: 10px;
 }
+
+.active-link {
+    font-weight: 600;
+    color: var(--mid-blue);
+}

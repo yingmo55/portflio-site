@@ -1,7 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import NavLinks from '../../Util/NavLinks/NavLinks';
 import './Navbar.css';
-import { Link } from 'react-router-dom';
 
 function Navbar () {
   const ref = useRef(null);
@@ -43,7 +42,7 @@ function Navbar () {
 
     return (
         <header id="header" ref={ref}>
-          <Link to='./#'><p id="siteLogo"><span>ying</span>yimo.dev</p></Link>
+          <a href='./#'><p id="siteLogo"><span>ying</span>yimo.dev</p></a>
           <nav>
             <button id="burgerNav" onClick={mobileNavBar} style={{display: burgerNavStyle}}></button>
             <div id="navMenu" style={{display: navMenuStyle}}>
