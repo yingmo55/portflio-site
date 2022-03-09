@@ -1,4 +1,4 @@
-import ContactContent from "../../Components/Contact/ContactForm/ContactContent/ContactContent";
+import ContactContent from "../../Components/Contact/ContactContent/ContactContent";
 import ContactForm from "../../Components/Contact/ContactForm/ContactForm";
 import './Contact.css';
 
