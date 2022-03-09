@@ -8,25 +8,42 @@
 #hero {
     width: 100vw;
     max-width: 100%;
-    padding-top: calc(7vh + 10px);
     display: grid;
     align-items: center;
     justify-content: center;
-    min-height: min(900px, 100vh);
+    min-height: min(1000px, 100vh);
     grid-template-columns: 0.2fr repeat(3, 1fr)  0.2fr; 
     grid-template-rows:  0.5fr 1fr 0.5fr; 
     gap: 10px;
+    position: relative
+    
 }
+/* .bg-with-filter {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    filter: blur(3px) grayscale(30%);
+    background: no-repeat  url('https://images.unsplash.com/photo-1542435503-956c469947f6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80') center / cover;
+} */
 
 .hero-content {
+    position: relative;
     display: flex;
     flex-flow: column wrap;
     z-index: 3;
     grid-area: 1 / 2 / span 3 / span 3;
     justify-self: center;
     margin-bottom: 10vh;
+    /* backdrop-filter: blur(10px); */
 }
 
+#heroHr {
+align-self: flex-start;
+width: 100%;
+}
 /* Text */
 
 #hero-text{
@@ -40,7 +57,6 @@
 }
 
 #heroDescription {
-    font-weight: 500;
     font-size: 1.3rem;
     line-height: 1.7;
 }
@@ -50,9 +66,8 @@
 #typingEffect {
     max-width: fit-content;
     display: inline-flex;
-    font-size: inherit;
-    font-family: inherit;
-    color: blue;
+    font: inherit;
+    color: rgb(75, 159, 255);
     white-space: nowrap;
     overflow: hidden;
     animation: typing 2s steps(7) infinite alternate;
@@ -73,17 +88,19 @@
     animation: FadeIn 1s ease-in-out forwards;
 }
 
-#hero-buttons > button {
-    background-color: rgba(41, 156, 209, 0.822);
-    color: whitesmoke;
+.heroNavButtons {
+    border: 1px solid rgba(41, 156, 209, 0.822);
+    /* background-color: rgba(41, 156, 209, 0.822); */
+    background-color: transparent;
+    color: rgb(36, 36, 36);
     border-radius: 0%;
     font-size: inherit;
     transition: all 1s linear;
 }
-#hero-buttons > button:hover {
+.heroNavButtons:hover {
     cursor: pointer;
 }
-#hero-buttons a {
+.heroNavButtons a {
     color: inherit;
     font-family: inherit;
     display: flex;
@@ -104,10 +121,12 @@
 }
 
 /* Background Elements */
+.hero-deco {
+    z-index: 2;
+}
 
 #hero-background {
     height: 180px;
-    z-index: -1;
     grid-area: 1 / 1 / span 2 / 3;
     align-self: center;
     justify-self: start;
@@ -115,13 +134,23 @@
 }
 
 #hero-background2 {
-    background-color: rgb(134, 231, 226);
+    background-color: rgb(182, 215, 230);
     height: 200px;
-    z-index: 1;
     justify-self: end;
     align-self: center;
     grid-area: 2 / 3 / span 2 / -1;
     animation: moveinright 2s ease-in-out 1s forwards;
+}
+
+#hero-background3 {
+    /* background-color: rgb(125, 102, 255); */
+    width: 20%;
+    justify-self: center;
+    align-self: start;
+    grid-area: 1 / 4 / -1 / span 1;
+    animation: moveinTop 2s ease-in-out 1.2s forwards;
+    margin-top: none;
+    padding-top: none;
 }
 
 /* Animations */
@@ -135,14 +164,14 @@
     30%{
         opacity: 0;
         width: 0%;
-        border:  10px solid rgb(162, 184, 247);
+        border:  10px solid var(--left-border-color);
         border-left: none;
     }
 
     100%{
         opacity: 1;
         width: 100%;
-        border:  10px solid rgb(162, 184, 247);
+        border:  10px solid var(--left-border-color);
         border-left: none;
     }
 }
@@ -160,6 +189,27 @@
     100%{
         opacity: 1;
         width: 85%;
+    }
+}
+
+
+@keyframes moveinTop {
+    0%{
+        opacity: 0;
+        border: none;
+    }
+    30%{
+        opacity: 0;
+        border: 10px solid var(--top-border-color);
+        border-top: none;
+        height: 0%;
+    }
+
+    100%{
+        opacity: 1;
+        border: 10px solid var(--top-border-color);
+        border-top: none;
+        height: 90%;
     }
 }
 
@@ -205,7 +255,6 @@
 
 @media screen and (min-width: 800px) {
     #hero {
-        min-height: 900px;
         padding: 0;
     }
 

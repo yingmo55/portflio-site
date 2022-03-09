@@ -1,0 +1,22 @@
+.contact-icons {
+    border: 1px solid var(--social-border-color);
+    border-radius: 50%;
+    padding: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+}
+
+.faIcons {
+    --width: 25px;
+    color: white;
+    width: var(--width);
+    height: var(--width);
+}
+
+.contact-icons:hover,
+.contact-icons:hover .faIcons {
+    border-color: var(--terminal-blue);
+    color: var(--terminal-blue);
+}

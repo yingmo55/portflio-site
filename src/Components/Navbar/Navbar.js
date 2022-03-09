@@ -1,5 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
+import NavLinks from '../../Util/NavLinks/NavLinks';
 import './Navbar.css';
+import { Link } from 'react-router-dom';
 
 function Navbar () {
   const ref = useRef(null);
@@ -41,18 +43,13 @@ function Navbar () {
 
     return (
         <header id="header" ref={ref}>
-        <p id="siteLogo">yingyimo.dev</p>
-        <nav>
-          <button id="burgerNav" onClick={mobileNavBar} style={{display: burgerNavStyle}}></button>
-          <div id="navMenu" style={{display: navMenuStyle}}>
-            <ul id='navUl'>
-              <li><a className="navLink" href="/#">Home</a></li>
-              <li><a className="navLink" href="#projectShowcase">Projects</a></li>
-              <li><a className="navLink" href="#skills">Skills</a></li>
-              <li><a className="navLink" href="/#">Contact</a></li>
-            </ul>
-          </div>
-        </nav>
+          <Link to='./#'><p id="siteLogo"><span>ying</span>yimo.dev</p></Link>
+          <nav>
+            <button id="burgerNav" onClick={mobileNavBar} style={{display: burgerNavStyle}}></button>
+            <div id="navMenu" style={{display: navMenuStyle}}>
+              <NavLinks />
+            </div>
+          </nav>
       </header>
     )
 }
