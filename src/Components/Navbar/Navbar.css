@@ -81,7 +81,7 @@
         display: none;
         position: absolute;
         left: 0;
-        top: calc(7vh + 11px);
+        top: calc(var(--nav-bar-height) + 1px);
         flex-flow: column wrap;
         background-color: aliceblue;
     }
