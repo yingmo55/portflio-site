@@ -8,13 +8,16 @@ import ContactPage from './Pages/Contact/Contact';
 
 function App() {
   return (
-    <>
-    <p>test</p>
-    
-    <Navbar />
-    <LandingPage />
-    <Footer />
-    </>
+    <Router>
+      <Navbar />
+      <main>
+      <Routes>
+          <Route path='/' element={<LandingPage />} />
+          <Route path='/contact' element={<ContactPage />} />
+      </Routes>
+      </main>
+      <Footer />
+    </Router>
   );
 }
 
