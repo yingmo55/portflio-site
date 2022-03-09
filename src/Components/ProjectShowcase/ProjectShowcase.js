@@ -17,7 +17,7 @@ function ProjectShowcase () {
             <Project title={todoListInfo.title} src={todoListInfo.src} desc={todoListInfo.shortDescription} />
             <Project title={whatToLearnInfo.title} src={whatToLearnInfo.src} desc={whatToLearnInfo.shortDescription} />
           </div>
-          <button class='moreProjectBtn'>More projects here</button>
+          <button className='moreProjectBtn'>More projects here</button>
       </section>
     )
 }

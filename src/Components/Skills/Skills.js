@@ -1,7 +1,7 @@
 import React from 'react';
 import './Skills.css';
 import SkillSection from '../SkillSection/SkillSection';
-import {language, framework, tools} from '../../Util/SkillDetails/SkillDetails.js';
+import {language, framework, tools, Software} from '../../Util/SkillDetails/SkillDetails.js';
 
 function Skills () {
 
@@ -14,6 +14,8 @@ function Skills () {
         skills={framework.skills} />
         <SkillSection title={tools.title} description={tools.description}
         skills={tools.skills} />
+        <SkillSection title={Software.title} description={Software.description}
+        skills={Software.skills} />
       </section>
     )
 }

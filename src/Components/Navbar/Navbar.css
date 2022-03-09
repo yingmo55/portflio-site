@@ -1,16 +1,16 @@
  /*Header*/
 #header {
     border-bottom: 1px solid gray;
-    height: calc(7vh + 5px);
+    height: var(--nav-bar-height);
     min-height: 50px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     position: fixed;
     top: 0;
     width: 100vw;
-    background-color: aliceblue;
-    padding-bottom: 5px;
+    background-color: rgba(240, 248, 255, 0.9);
+    padding: var(--nav-bar-padding);
     z-index: 4;
 }
 
@@ -21,7 +21,19 @@
 #siteLogo {
     font-family: 'JetBrains Mono', monospace;
     font-size: 2.1rem;
+    color: black;
+    font-style: normal;
 }
+
+#siteLogo span {
+    font: inherit;
+    height: 100%;
+    padding: 8px 2px;
+    display: inline-block;
+    background-color: #2f8cc2;
+    color: white;
+}
+
 
 #burgerNav {
     display: none;
@@ -34,30 +46,6 @@
 
 #burgerNav:hover {
     cursor: pointer;
-}
-
-#navMenu > ul {
-    display: inline-flex;
-}
-
-#navMenu > ul li {
-    margin: 10px;
-}
-
-#navMenu .navLink {
-    display: inline-block;
-    color: rgb(20, 24, 29);
-    padding: 10px;
-    font-weight: 600;
-}
-
-#navMenu .navLink:hover {
-    background-color: #3F90BE;
-}
-
-#navMenu .navLink:active {
-    color: white;
-    background-color: #1c3c4e;
 }
 
 /*Animation*/

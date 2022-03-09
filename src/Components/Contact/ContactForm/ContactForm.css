@@ -1,0 +1,49 @@
+.contactForm {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-self: center;
+}
+
+.contactForm * {
+    margin: 10px;
+}
+
+.contactInput {
+    border: none;
+    padding: 10px;
+}
+
+.contactInput:focus {
+    outline: 2px solid aqua;
+}
+
+textarea.contactInput {
+    resize: none;
+}
+
+.required-asterisk {
+    color: red;
+    margin: 0;
+}
+
+.infoRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 0;
+}
+
+.infoCol {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.contactForm input[type=submit] {
+    width: fit-content;
+    align-self: center;
+    padding: 5px 15px;
+    border: 1px solid grey;
+}
