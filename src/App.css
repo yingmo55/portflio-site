@@ -1,7 +1,22 @@
-/* Color Variables */
+
 :root {
+  /* Color Variables */
   --left-border-color: rgb(80, 90, 99);
   --top-border-color: #284a94;
+  --social-border-color: rgb(255, 255, 255);
+
+  --terminal-bg: #282A36;
+  --terminal-blue: #6ce9fd;
+  --terminal-pink: #ff79c6;
+  --terminal-yellow: #f1fa8c;
+  --terminal-green: #36bb7b;
+
+  --dark-blue: #072A40;
+  --mid-blue: #178CA4;
+  --light-aqua: #18B7BE;
+  --light-grey: #F9F7F0;
+
+  /* Nav height */
   --nav-bar-height: calc(6vh + 5px);
   --nav-bar-padding-top: 5px;
   --nav-bar-padding-bottom: 5px;
