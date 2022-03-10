@@ -9,17 +9,16 @@ function ProjectShowcase () {
         <section id="projectShowcase">
           <h2>Projects</h2>
           <div id="showcase">
-            {
-              projects.map(project => 
+          {  projects.map(project => 
                 <Project title={project.title} 
                          src={project.src} 
                          desc={project.shortDescription} 
                          tech={project.tools}
+                         liveLink={project.liveLink}
+                         codeLink={project.codeLink}
                          key={project.title} />
-                )
-            }
+                )}
           </div>
-          <button className='moreProjectBtn'>More projects here</button>
       </section>
     )
 }

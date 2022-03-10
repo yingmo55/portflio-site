@@ -63,3 +63,8 @@
     line-height: 1;
     max-width: min(70vw, 350px);
 }
+
+.techs span {
+    font-size: 1.1rem;
+    line-height: 2;
+}
