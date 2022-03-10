@@ -16,7 +16,7 @@
   --social-border-color: rgb(255, 255, 255);
   --link-color: rgb(6, 109, 168);
   --typing-color: rgb(0, 162, 255);
-
+  --focused-color: rgb(177, 7, 21);
   /* Nav height */
   --nav-bar-height: calc(6vh + 5px);
 }
