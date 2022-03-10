@@ -11,7 +11,11 @@ function ProjectShowcase () {
           <div id="showcase">
             {
               projects.map(project => 
-                <Project title={project.title} src={project.src} desc={project.shortDescription} tech={project.tools} />
+                <Project title={project.title} 
+                         src={project.src} 
+                         desc={project.shortDescription} 
+                         tech={project.tools}
+                         key={project.title} />
                 )
             }
           </div>
