@@ -1,33 +1,24 @@
-
 :root {
   /* Color Variables */
-  --left-border-color: rgb(80, 90, 99);
-  --top-border-color: #284a94;
-  --social-border-color: rgb(255, 255, 255);
-
-  --terminal-bg: #282A36;
-  --terminal-blue: #6ce9fd;
-  --terminal-pink: #ff79c6;
-  --terminal-yellow: #f1fa8c;
-  --terminal-green: #36bb7b;
+  --left-border-color: rgb(181, 213, 241);
+  --right-retangle-color: rgb(212, 204, 255);
+  --top-border-color: #98e9d7;
 
   --dark-blue: #072A40;
-  --mid-blue: #178CA4;
+  --mid-blue: #009bca;
   --light-aqua: #18B7BE;
   --light-grey: #F9F7F0;
 
+  --dark-grey: rgb(50, 50, 50);
+
   --light-BG: rgb(244, 251, 252);
-  --dark-BG: #072A40;
+  --dark-BG: #3e7ea5;
+  --social-border-color: rgb(255, 255, 255);
+  --link-color: rgb(6, 109, 168);
+  --typing-color: rgb(0, 162, 255);
+
   /* Nav height */
   --nav-bar-height: calc(6vh + 5px);
-}
-
-em {
-  font-style: italic;
-}
-
-strong {
-font-weight: 500;
 }
 
 /*Additional Reset and Initialzie */
@@ -40,40 +31,6 @@ html{
 
 button {
   border: none;
-}
-
-h2 {
-  font-size: 2.3em;
-  font-weight: 700;
-}
-
-section > h2 {
-  text-align: center;
-  padding: 10px;
-}
-
-h1, h2, h3 {
-  font-family: 'JetBrains Mono', monospace;
-}
-
-h3 {
-  font-size: 1.8rem;
-  font-weight: 500;
-}
-
-p, a, span {
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
-  font-weight: 300;
-}
-
-a {
-  color: #61dafb;
-  text-decoration: none;
-  font-style: italic;
-}
-
-button {
   width: auto;
   padding: 0 20px;
   height: 50px;
@@ -81,7 +38,54 @@ button {
   border-radius: 25px;
 }
 
-/* Main Content */
+/* Fonts  */
+h1 {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+h2, h3 {
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2.3em;
+  font-weight: 700;
+  padding: 10px;
+}
+
+h3 {
+  font-size: 1.9rem;
+  font-weight: 500;
+}
+
+h4 {
+  font-size: 1.4rem;
+}
+
+p, a, span {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+}
+p {
+  font-size: 1.3rem;
+}
+a {
+  color: var(--link-color);
+  text-decoration: none;
+  font-style: italic;
+}
+
+em {
+  font-style: italic;
+}
+
+strong {
+font-weight: 500;
+}
+
+/* <Main> Content */
 main {
   margin-top: var(--nav-bar-height); 
   min-height: 800px;
@@ -89,8 +93,10 @@ main {
 
 main > section:nth-of-type(2n) {
   background-color: var(--dark-BG);
+  color: white;
 }
 
 main > section:nth-of-type(2n + 1) {
   background-color: var(--light-BG);
+  color: black;
 }
