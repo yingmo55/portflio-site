@@ -4,7 +4,7 @@ import todoListPreview from '../../assets/images/previews/todo-list.jpg';
 import whatToLearnPreview from '../../assets/images/previews/Which-language-first.jpg';
 import sketchHubPreview from '../../assets/images/previews/sketchHub.jpg';
 
-// name, tools=[], previewSrc='', shortDescription, longDescription='', liveLink='', codeLink=''
+// name, tools=[], previewSrc, shortDescription, longDescription='', liveLink='', codeLink=''
 
 const calculator = projectDetails('calculator', 
                                   ['React.js', 'CSS'], 
