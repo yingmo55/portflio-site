@@ -11,8 +11,8 @@ export default function NavLinks() {
             Home
             </NavLink>
           </li>
+          <li><a className="navLink" href="/#about">About</a></li>
           <li><a className="navLink" href="/#projectShowcase">Projects</a></li>
-          <li><a className="navLink" href="/#skills">Skills</a></li>
           <li>
             <NavLink to="/contact" 
                      className={({ isActive }) => isActive ? "navLink active-link" : "navLink"} >

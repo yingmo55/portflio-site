@@ -11,3 +11,9 @@
     justify-content: center;
     flex-wrap: wrap;
 }
+
+@media screen and (min-width: 800px) {
+    .sectionDiv {
+        width: 80%;
+    }
+}

@@ -10,7 +10,7 @@ function Footer () {
           <div className='contact-icon-set'>
             <SocialButton contactInfo={contactInfo} />
           </div>
-          <p>Made with 🍵 by Ying</p>
+          <p>Made with <span role="img" aria-label='green tea'>🍵</span> by Ying</p>
       </footer>
     )
 }
