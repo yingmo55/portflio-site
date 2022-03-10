@@ -18,7 +18,7 @@ function Navbar () {
 
   const showNav = () => {
     const width = ref.current.offsetWidth;
-      if(width > 800) {
+      if(width > 900) {
         setBurgerNavStyle ('none')
         setNavMenuStyle('flex')
       } else {
