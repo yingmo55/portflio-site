@@ -4,7 +4,7 @@ import './ContactForm.css';
 export default function ContactForm () {
 
     return (
-        <form className="contactForm">
+        <form className="contactForm" name='contact' netlify>
             <div className="infoRow">
                 <div className="infoCol">
                     <label htmlFor='contactName'>Name<span className="required-asterisk">*</span></label>
