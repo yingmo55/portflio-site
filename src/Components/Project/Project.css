@@ -48,14 +48,23 @@
 }
 
 .projectLink:hover {
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(3px) brightness(50%);
     opacity: 100%;
+}
+
+.projectLink a {
+    font-weight: 500;
+}
+
+.projectLink a ~ a::before {
+    content: "|";
+    color: white;
+    margin: 20px;
 }
 
 .project p, 
 .project h3 {
     text-align: center;
-    color: white;
 }
 
 .project > p {

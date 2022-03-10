@@ -12,7 +12,7 @@ const bgImage = {
     return (
         <section className="project">
             <div className="project-preview" style={bgImage}>
-            <div className='projectLink'><a href={liveLink}>Live</a> | <a href={codeLink}>Code</a></div>
+            <div className='projectLink'><a href={liveLink}>Live</a> <a href={codeLink}>Code</a></div>
             </div>
             <h3>{title}</h3>
             <p>{desc}</p>
