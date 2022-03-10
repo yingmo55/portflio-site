@@ -1,54 +1,42 @@
 import SkillDetails from './SkillDetailsGenerator';
 
-import pythonLogo from '../../assets/icons/Skills/python.svg';
-import htmlLogo from '../../assets/icons/Skills/html5.svg';
-import cssLogo from '../../assets/icons/Skills/css3.svg';
-import javaScriptLogo from '../../assets/icons/Skills/js-square.svg';
-import reactLogo from '../../assets/icons/Skills/react.svg';
-import bootstrapLogo from '../../assets/icons/Skills/bootstrap.svg';
+import { faPython, faHtml5, faCss3, faJsSquare, faReact, faBootstrap } from '@fortawesome/free-brands-svg-icons';
 
 
 const languageClass = new SkillDetails('Languages', 'I can code in...');
-languageClass.skills = ['JavaScript', javaScriptLogo];
-languageClass.skills = ['HTML', htmlLogo];
-languageClass.skills = ['CSS', cssLogo];
-languageClass.skills = ['python', pythonLogo];
+    languageClass.skills = ['JavaScript', faJsSquare];
+    languageClass.skills = ['HTML', faHtml5];
+    languageClass.skills = ['CSS', faCss3];
+    languageClass.skills = ['Python', faPython];
 
 const frameworkClass = new SkillDetails('Frameworks', 'I can use these framework...');
-frameworkClass.skills = ['React', reactLogo]
-frameworkClass.skills = ['Bootstrap', bootstrapLogo]
-frameworkClass.skills = ['Jest']
+    frameworkClass.skills = ['React', faReact];
+    frameworkClass.skills = ['Bootstrap', faBootstrap];
+    frameworkClass.skills = ['Jest'];
 
-const toolsClass = new SkillDetails('Tools', 'I use these tools for development...');
-toolsClass.skills = ['Git']
-toolsClass.skills = ['GitHub']
-toolsClass.skills = ['Netlify']
-
-const softwareClass = new SkillDetails('Software', 'I use these Software...');
-softwareClass.skills = ['Visual Studio Code']
-softwareClass.skills = ['PostMan']
-softwareClass.skills = ['Adobe Photoshop']
-softwareClass.skills = ['Adobe InDesign']
-softwareClass.skills = ['Adobe XD']
+const toolsClass = new SkillDetails('Tools', 'I use these tools and software for development...');
+    toolsClass.skills = ['Git'];
+    toolsClass.skills = ['GitHub'];
+    toolsClass.skills = ['Netlify'];
+    toolsClass.skills = ['PostMan'];
+    toolsClass.skills = ['Visual Studio Code'];
+    toolsClass.skills = ['Adobe Photoshop'];
+    toolsClass.skills = ['Adobe InDesign'];
+    toolsClass.skills = ['Adobe XD'];
 
 const language = {
-    ...languageClass.getSkills(), 
+    ...languageClass.titleAndDesc(), 
     skills: languageClass.skills
 }
 
 const framework = {
-    ...frameworkClass.getSkills(), 
+    ...frameworkClass.titleAndDesc(), 
     skills: frameworkClass.skills
 }
 
 const tools = {
-    ...toolsClass.getSkills(),
+    ...toolsClass.titleAndDesc(),
     skills: toolsClass.skills
 }
 
-const Software = {
-    ...softwareClass.getSkills(),
-    skills: softwareClass.skills
-}
-
-export {language, framework, tools, Software} ;
+export const skillSets = [language, framework, tools];

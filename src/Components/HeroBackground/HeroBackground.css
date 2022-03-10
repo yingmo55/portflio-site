@@ -1,0 +1,100 @@
+ 
+/* Background Elements */
+.heroBG {
+    position: absolute;
+    width: inherit;
+    min-height: inherit;
+    max-width: 100%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 0.2fr repeat(3, 1fr)  0.2fr; 
+    grid-template-rows:  0.5fr 1fr 0.5fr; 
+    gap: 10px;
+}
+
+#hero-background {
+    height: 180px;
+    grid-area: 1 / 1 / span 2 / 3;
+    align-self: center;
+    justify-self: start;
+    animation: moveinleft 2s ease-in-out 1s forwards;
+}
+
+#hero-background2 {
+    background-color: var(--right-retangle-color);
+    height: 200px;
+    justify-self: end;
+    align-self: center;
+    grid-area: 2 / 3 / span 2 / -1;
+    animation: moveinright 2s ease-in-out 1s forwards;
+}
+
+#hero-background3 {
+    width: 20%;
+    justify-self: center;
+    align-self: start;
+    grid-area: 1 / 4 / -1 / span 1;
+    animation: moveinTop 2s ease-in-out 1.2s forwards;
+    margin-top: none;
+    padding-top: none;
+}
+
+/* Animation */
+
+@keyframes moveinleft {
+    0%{
+        opacity: 0;
+        width: 0%;
+        border: none;
+    }
+    30%{
+        opacity: 0;
+        width: 0%;
+        border:  10px solid var(--left-border-color);
+        border-left: none;
+    }
+
+    100%{
+        opacity: 1;
+        width: 100%;
+        border:  10px solid var(--left-border-color);
+        border-left: none;
+    }
+}
+
+@keyframes moveinright {
+    0%{
+        opacity: 0;
+        width: 0%;
+    }
+    30%{
+        opacity: 0;
+        width: 0%;
+    }
+
+    100%{
+        opacity: 1;
+        width: 85%;
+    }
+}
+
+@keyframes moveinTop {
+    0%{
+        opacity: 0;
+        border: none;
+    }
+    30%{
+        opacity: 0;
+        border: 10px solid var(--top-border-color);
+        border-top: none;
+        height: 0%;
+    }
+
+    100%{
+        opacity: 1;
+        border: 10px solid var(--top-border-color);
+        border-top: none;
+        height: 90%;
+    }
+}

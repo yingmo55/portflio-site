@@ -4,14 +4,16 @@
     align-items: center;
     justify-content: center;
     padding: 10px;
-    border: 1px solid grey;
+    border: 1px solid var(--dark-blue);
     height: 30px;
     min-width: 40px;
     margin: 5px 10px;
-    background-color: rgba(138, 207, 207, 0.185);
+    backdrop-filter: brightness(90%);
 }
 
 .skill-icon {
-    height: 30px;
-    width:30px;
+    --width: 30px;
+    height: var(--width);
+    width: var(--width);
+    margin-right: 5px;
 }

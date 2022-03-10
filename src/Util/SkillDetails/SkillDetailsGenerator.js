@@ -12,7 +12,7 @@ export default class SkillDetails {
         this.skills.push({name: name,src: src});
     }
 
-    getSkills () {
+    titleAndDesc () {
         return {
             title: this.title,
             description: this.description

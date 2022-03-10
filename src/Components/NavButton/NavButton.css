@@ -1,0 +1,29 @@
+.heroNavButtons {
+    border: 2px solid var(--mid-blue);
+    color: var(--mid-blue);
+    border-radius: 0%;
+    font-size: inherit;
+    transition: all 1s linear;
+    background-color: rgba(226, 226, 226, 0.3);
+}
+
+.heroNavButtons:hover {
+    cursor: pointer;
+}
+.heroNavButtons a {
+    color: inherit;
+    font-family: inherit;
+    display: flex;
+    align-items: center;
+}
+
+.right-arrow {
+    display: inline-block;
+    margin-right: 5px;
+    height: 18px;
+    transition: transform 0.3s;
+}
+
+.heroNavButtons:hover .right-arrow {
+    transform: rotate(90deg);
+}

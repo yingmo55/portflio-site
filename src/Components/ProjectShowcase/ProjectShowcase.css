@@ -5,7 +5,6 @@
     justify-content: space-around;
     width: 100%;
     padding: 10vh 0;
-    background-color: #185172;
 }
 
 #showcase {
@@ -18,7 +17,6 @@
 
 #projectShowcase h2 {
     text-align: center;
-    color: white;
 }
 
 .moreProjectBtn {
