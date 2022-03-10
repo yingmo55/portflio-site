@@ -9,6 +9,8 @@
   --light-aqua: #18B7BE;
   --light-grey: #F9F7F0;
 
+  --active-link-color: #6518be;
+
   --dark-grey: rgb(50, 50, 50);
 
   --light-BG: rgb(244, 251, 252);
@@ -75,6 +77,14 @@ a {
   color: var(--link-color);
   text-decoration: none;
   font-style: italic;
+}
+
+a:hover {
+  filter: brightness(170%);
+}
+
+a:active {
+  filter: brightness(50%);
 }
 
 em {

@@ -82,7 +82,7 @@ textarea.contactInput:focus ~ .focusBorder {
 .contactForm input[type=submit] {
     width: fit-content;
     align-self: center;
-    padding: 5px 15px;
+    padding: 10px 20px;
     background-color: var(--light-aqua);
     border: none;
     color: white;
@@ -90,4 +90,11 @@ textarea.contactInput:focus ~ .focusBorder {
 .contactForm input[type=submit]:hover,
 .contactForm input[type=submit]:focus {
     cursor: pointer;
+    background-color: var(--mid-blue);
+    filter: brightness(90%);
 } 
+
+.contactForm input[type=submit]:active {
+    background-color: var(--active-link-color);
+    filter: brightness(110%);
+}
