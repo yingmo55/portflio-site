@@ -13,6 +13,7 @@
 
 .contactInput {
     border: none;
+    border-radius: 0;
     padding: 10px;
     position: relative;
     background-color: transparent;
@@ -20,7 +21,6 @@
     border-bottom: 2px solid var(--link-color);
     transition: border-bottom 0.3s ease-in-out;
 }
-
 
 textarea.contactInput {
     resize: none;
@@ -83,6 +83,7 @@ textarea.contactInput:focus ~ .focusBorder {
 
 .contactForm input[type=submit] {
     width: fit-content;
+    font-size: 1.3rem;
     align-self: center;
     padding: 10px 20px;
     background-color: var(--light-aqua);
