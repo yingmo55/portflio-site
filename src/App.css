@@ -16,10 +16,18 @@
   --light-aqua: #18B7BE;
   --light-grey: #F9F7F0;
 
+  --light-BG: rgb(244, 251, 252);
+  --dark-BG: #072A40;
   /* Nav height */
   --nav-bar-height: calc(6vh + 5px);
-  --nav-bar-padding-top: 5px;
-  --nav-bar-padding-bottom: 5px;
+}
+
+em {
+  font-style: italic;
+}
+
+strong {
+font-weight: 500;
 }
 
 /*Additional Reset and Initialzie */
@@ -65,7 +73,6 @@ a {
   font-style: italic;
 }
 
-
 button {
   width: auto;
   padding: 0 20px;
@@ -75,12 +82,15 @@ button {
 }
 
 /* Main Content */
-
-main > section ~ section {
-  min-height: 900px;
-}
-
 main {
   margin-top: var(--nav-bar-height); 
   min-height: 800px;
+}
+
+main > section:nth-of-type(2n) {
+  background-color: var(--dark-BG);
+}
+
+main > section:nth-of-type(2n + 1) {
+  background-color: var(--light-BG);
 }
