@@ -1,6 +1,35 @@
 #contactPage {
     display: flex;
-    flex-flow: column;
+    flex-flow: row-reverse wrap;
     justify-content: space-between;
+    align-items: space-between;
+    height: 100vh;
+    min-height: 800px;
+    width: 100%;
+    margin-top: var(--nav-bar-height);
+}
+.contactMain {
+    width: 100%;
+    align-self: center;
+    justify-self: center;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
+}
+
+.contactMain p {
+    width: 80%;
+    text-align: center;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+@media screen and (min-width: 900px) {
+    #contactPage {
+        flex-wrap: nowrap;
+    }
+    .contactMain {
+        width: 60%;
+    }
 }
