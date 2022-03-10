@@ -4,8 +4,8 @@ import './ContactForm.css';
 export default function ContactForm () {
 
     return (
-        <form className="contactForm" name='contact' netlify>
-            <input type="hidden" name="form-name" value="contact" />
+        <form className="contactForm" name='contactForm' method='POST' >
+            <input type="hidden" name="form-name" value="contactForm" />
             <div className="infoRow">
                 <div className="infoCol">
                     <label htmlFor='name'>Name<span className="required-asterisk">*</span></label>
