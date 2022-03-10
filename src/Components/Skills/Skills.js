@@ -7,15 +7,17 @@ function Skills () {
 
     return (
         <section id="skills">
-        <h2>skills</h2>
-        {
-          skillSets.map(element => 
-            <SkillSection title={element.title} 
-                          description={element.description}
-                          skills={element.skills} 
-                          key={element.title} />
-            )
-        }
+          <h3>skills</h3>
+          <div className='sectionDiv'>
+            {
+              skillSets.map(element => 
+                <SkillSection title={element.title} 
+                              description={element.description}
+                              skills={element.skills} 
+                              key={element.title} />
+                )
+            }
+          </div>
       </section>
     )
 }

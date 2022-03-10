@@ -6,10 +6,8 @@
     padding: 10vh 0;
 }
 
-#skills h3 {
-    font-size: 2rem;
-}
-
-#skills p {
-    font-size: 1.3rem;
+.sectionDiv {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
