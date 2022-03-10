@@ -79,6 +79,14 @@ a {
   font-style: italic;
 }
 
+a:hover {
+  filter: brightness(170%);
+}
+
+a:active {
+  filter: brightness(50%);
+}
+
 em {
   font-style: italic;
 }
