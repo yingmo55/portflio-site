@@ -20,7 +20,7 @@
   --typing-color: rgb(0, 162, 255);
   --focused-color: rgb(177, 7, 21);
   /* Nav height */
-  --nav-bar-height: calc(6vh + 5px);
+  --nav-bar-height: calc(50px + 1vh);
 }
 
 /*Additional Reset and Initialzie */

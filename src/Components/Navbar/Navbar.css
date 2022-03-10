@@ -69,9 +69,9 @@
 
 /* Media Queries */
 
-@media screen and (max-aspect-ratio: 8 / 10), (max-width: 800px) {
+@media screen and (max-aspect-ratio: 8 / 10), (max-width: 900px) {
     #siteLogo {
-        font-size: 1.5em;
+        font-size: calc(1rem + 2vmin);
     }
     /* For mobile Display */
     #burgerNav {

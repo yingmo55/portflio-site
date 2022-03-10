@@ -3,10 +3,8 @@
     flex-flow: row-reverse wrap;
     justify-content: space-between;
     align-items: space-between;
-    height: 100vh;
     min-height: 800px;
-    width: 100%;
-    margin-top: var(--nav-bar-height);
+    max-width: 100%;
 }
 .contactMain {
     width: 100%;
@@ -17,6 +15,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 20px 0;
 }
 
 .contactMain p {
@@ -28,8 +27,21 @@
 @media screen and (min-width: 900px) {
     #contactPage {
         flex-wrap: nowrap;
+        min-height: 80vh;
     }
     .contactMain {
         width: 60%;
+    }
+}
+
+@media screen and (max-aspect-ratio: 7/10) and (min-width: 700px){
+    #contactPage {
+        margin-top: var(--nav-bar-height);
+        flex-direction: row wrap;
+        min-height: 86vh;
+        justify-content: flex-start;
+    }
+    .contactMain {
+        width: 100%;
     }
 }
