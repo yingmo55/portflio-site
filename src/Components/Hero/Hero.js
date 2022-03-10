@@ -1,6 +1,7 @@
 import React from 'react';
 import './Hero.css';
 import NavButton from '../NavButton/NavButton';
+import HeroBackground from '../HeroBackground/HeroBackground';
 
 function Hero () {
     const name1 = "Ying";
@@ -10,7 +11,7 @@ function Hero () {
 
     const heroNavs = [
         {
-            link: '/#skills',
+            link: '/#about',
             desc: 'about me'
     }, 
         {
@@ -39,12 +40,7 @@ function Hero () {
                     }
                 </div>
             </div>
-            <div className='heroBG'>
-                <div className='hero-deco' id='hero-background' role="presentation"></div>
-                <div className='hero-deco' id='hero-background2' role="presentation"></div>
-                <div className='hero-deco' id='hero-background3' role="presentation"></div>
-                <div className='bg-with-filter' role="presentation"></div>
-            </div>
+            <HeroBackground />
         </section>
     )
 }

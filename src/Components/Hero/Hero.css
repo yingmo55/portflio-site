@@ -1,5 +1,5 @@
 /* Font */
-#hero-text > h1 {
+h1 {
     font-size: calc(30px + 1vmin);
     font-weight: 600;
 }
@@ -15,7 +15,7 @@
     grid-template-columns: 0.2fr repeat(3, 1fr)  0.2fr; 
     grid-template-rows:  0.5fr 1fr 0.5fr; 
     gap: 10px;
-    position: relative
+    position: relative;
 }
 
 .hero-content {
@@ -26,12 +26,12 @@
     grid-area: 1 / 2 / span 3 / span 3;
     justify-self: center;
     margin-bottom: 10vh;
-    /* backdrop-filter: blur(10px); */
 }
 
 #heroHr {
-align-self: flex-start;
-width: 100%;
+    align-self: flex-start;
+    width: 100%;
+    animation: extendRight 0.5s ease-in-out forwards;
 }
 
 /* Text */
@@ -57,7 +57,7 @@ width: 100%;
     max-width: fit-content;
     display: inline-flex;
     font: inherit;
-    color: rgb(75, 159, 255);
+    color: var(--typing-color);
     white-space: nowrap;
     overflow: hidden;
     animation: typing 2s steps(7) infinite alternate;
@@ -65,7 +65,7 @@ width: 100%;
 
 #underscore {
     font-size: inherit;
-    animation: blinkingUnderscore 1s linear  infinite;
+    animation: blinkingUnderscore 1s linear infinite;
 }
 
 /* Nav button Section */
@@ -75,106 +75,17 @@ width: 100%;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    animation: FadeIn 1s ease-in-out forwards;
-}
-
-/* Background Elements */
-.heroBG {
-    position: absolute;
-    width: inherit;
-    min-height: inherit;
-    max-width: 100%;
-    display: grid;
-    align-items: center;
-    justify-content: center;
-    grid-template-columns: 0.2fr repeat(3, 1fr)  0.2fr; 
-    grid-template-rows:  0.5fr 1fr 0.5fr; 
-    gap: 10px;
-}
-
-#hero-background {
-    height: 180px;
-    grid-area: 1 / 1 / span 2 / 3;
-    align-self: center;
-    justify-self: start;
-    animation: moveinleft 2s ease-in-out 1s forwards;
-}
-
-#hero-background2 {
-    background-color: rgb(182, 215, 230);
-    height: 200px;
-    justify-self: end;
-    align-self: center;
-    grid-area: 2 / 3 / span 2 / -1;
-    animation: moveinright 2s ease-in-out 1s forwards;
-}
-
-#hero-background3 {
-    width: 20%;
-    justify-self: center;
-    align-self: start;
-    grid-area: 1 / 4 / -1 / span 1;
-    animation: moveinTop 2s ease-in-out 1.2s forwards;
-    margin-top: none;
-    padding-top: none;
+    animation: FadeIn 1.5s ease-in-out forwards;
 }
 
 /* Animations */
 
-@keyframes moveinleft {
-    0%{
-        opacity: 0;
+@keyframes extendRight {
+    0% {
         width: 0%;
-        border: none;
     }
-    30%{
-        opacity: 0;
-        width: 0%;
-        border:  10px solid var(--left-border-color);
-        border-left: none;
-    }
-
-    100%{
-        opacity: 1;
+    100% {
         width: 100%;
-        border:  10px solid var(--left-border-color);
-        border-left: none;
-    }
-}
-
-@keyframes moveinright {
-    0%{
-        opacity: 0;
-        width: 0%;
-    }
-    30%{
-        opacity: 0;
-        width: 0%;
-    }
-
-    100%{
-        opacity: 1;
-        width: 85%;
-    }
-}
-
-@keyframes moveinTop {
-    0%{
-        opacity: 0;
-        border: none;
-    }
-    30%{
-        opacity: 0;
-        border: 10px solid var(--top-border-color);
-        border-top: none;
-        height: 0%;
-    }
-
-    100%{
-        opacity: 1;
-        border: 10px solid var(--top-border-color);
-        border-top: none;
-        height: 90%;
     }
 }
 
