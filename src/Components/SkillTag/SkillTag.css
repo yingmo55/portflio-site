@@ -12,6 +12,8 @@
 }
 
 .skill-icon {
-    height: 30px;
-    width:30px;
+    --width: 30px;
+    height: var(--width);
+    width: var(--width);
+    margin-right: 5px;
 }
