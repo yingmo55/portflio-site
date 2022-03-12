@@ -11,8 +11,8 @@ const bgImage = {
 
     return (
         <section className="project">
-            <div className="project-preview" style={bgImage}>
-            <div className='projectLink'><a href={liveLink}>Live</a> <a href={codeLink}>Code</a></div>
+            <div className="project-preview" style={bgImage} tabindex="0">
+            <div className='projectLink'><a className='link-to-project' href={liveLink}>Live</a> <a className='link-to-project' href={codeLink}>Code</a></div>
             </div>
             <h3>{title}</h3>
             <p>{desc}</p>
