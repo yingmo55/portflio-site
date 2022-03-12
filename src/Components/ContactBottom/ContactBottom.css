@@ -1,0 +1,58 @@
+.footer-contact {
+    min-height: 20vh;
+    padding: 2vh 0;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-contact > * {
+    margin: 10px;
+    justify-self: center;
+    text-align: center;
+}
+
+.footer-contact-text {
+    line-height: 1.6;
+}
+
+.footer-contact-btn {
+    width: fit-content;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    align-self: flex-end;
+    background-color: transparent;
+    border: 2px solid white;
+    transition: all 300ms ease-in-out;
+}
+
+.footer-contact-btn a {
+    color: white;
+}
+
+.footer-contact-btn:hover a,
+.footer-contact-btn:focus a {
+    color: var(--dark-BG);
+}
+
+.footer-contact-icon {
+    color: inherit;
+    font-size: inherit;
+    margin-right: 5px;
+}
+
+.footer-contact-btn:hover,
+.footer-contact-btn:focus {
+    background-color: white;
+    transform: scale(1.2);
+}
+
+@media screen and (min-width: 800px) {
+.footer-contact-text {
+    max-width: 40vw;
+}
+}
