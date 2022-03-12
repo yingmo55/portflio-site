@@ -5,11 +5,11 @@
     font-weight: 600;
 }
 .navLink:hover {
-    background-color: #3F90BE;
+    background-color: var(--nav-bg-hover);
 }
 .navLink:active {
     color: white;
-    background-color: #1c3c4e;
+    background-color: var(--nav-bg-active);
 }
 
 #nav-Links {
@@ -26,5 +26,5 @@
 
 .active-link {
     font-weight: 600;
-    color: var(--mid-blue);
+    color: var(--nav-active-link);
 }

@@ -1,8 +1,8 @@
 :root {
   /* Color Variables */
-  --left-border-color: rgb(181, 213, 241);
-  --right-retangle-color: rgb(212, 204, 255);
-  --top-border-color: #98e9d7;
+  --left-border-color: #b5d5f1;
+  --right-retangle-color: #AFAFF9;
+  --top-border-color: #0036a3;
 
   --dark-blue: #072A40;
   --mid-blue: #009bca;
@@ -13,12 +13,20 @@
 
   --dark-grey: rgb(50, 50, 50);
 
-  --light-BG: rgb(244, 251, 252);
-  --dark-BG: #3e7ea5;
+  --light-BG: #f4fbfc;
+  --dark-BG: #005B94;
   --social-border-color: rgb(255, 255, 255);
-  --link-color: rgb(6, 109, 168);
-  --typing-color: rgb(0, 162, 255);
+  --link-color: #0620A2;
+  --typing-color: #004CC7;
   --focused-color: rgb(7, 177, 7);
+  --footer-color: #3e7ea5;
+  --hero-nav-color: #002157;
+  --nav-logo-bg: #005B94;
+
+  --nav-bg-hover: #8AB4CC;
+  --nav-bg-active: #1c3c4e;
+  --nav-active-link: #001166;
+
   /* Nav height */
   --nav-bar-height: calc(50px + 1vh);
 }
@@ -73,6 +81,7 @@ p, a, span {
 p {
   font-size: 1.3rem;
 }
+
 a {
   color: var(--link-color);
   text-decoration: none;
@@ -80,11 +89,12 @@ a {
 }
 
 a:hover {
-  filter: brightness(170%);
+  filter: brightness(150%);
 }
 
 a:active {
-  filter: brightness(50%);
+  color: white;
+
 }
 
 em {
