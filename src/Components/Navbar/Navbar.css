@@ -30,7 +30,7 @@
     height: 100%;
     padding: 8px 2px;
     display: inline-block;
-    background-color: #2f8cc2;
+    background-color: var(--nav-logo-bg);
     color: white;
 }
 

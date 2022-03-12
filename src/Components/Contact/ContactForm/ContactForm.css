@@ -94,10 +94,10 @@ textarea.contactInput:focus ~ .focusBorder {
 .contactForm input[type=submit]:focus {
     cursor: pointer;
     background-color: var(--mid-blue);
-    filter: brightness(90%);
+    filter: brightness(120%);
 } 
 
 .contactForm input[type=submit]:active {
-    background-color: var(--active-link-color);
-    filter: brightness(110%);
+    color: black;
+    filter: brightness(80%);
 }
