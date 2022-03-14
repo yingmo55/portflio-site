@@ -7,7 +7,7 @@ export default function ContactFooter() {
     return (
         <section className='footer-contact'>
             <div className="footer-contact-text">
-            <h2>Interested in working with me?</h2>
+            <h2 tabindex="0">Interested in working with me?</h2>
             <p>I am currently available for hire (full-time/freelance). Feel free to contact me as well if you have any questions!</p>
             </div>
             <button className="footer-contact-btn"> 

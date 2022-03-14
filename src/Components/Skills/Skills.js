@@ -7,7 +7,7 @@ function Skills () {
 
     return (
         <section id="skills">
-          <h3>skills</h3>
+          <h3 tabindex="0">skills</h3>
           <div className='sectionDiv'>
             {
               skillSets.map(element => 
