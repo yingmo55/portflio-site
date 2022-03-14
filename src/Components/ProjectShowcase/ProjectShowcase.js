@@ -7,7 +7,7 @@ function ProjectShowcase () {
 
     return (
         <section id="projectShowcase">
-          <h2>Projects</h2>
+          <h2 tabindex="0">Projects</h2>
           <div id="showcase">
           {  projects.map(project => 
                 <Project title={project.title} 

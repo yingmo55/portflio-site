@@ -6,7 +6,7 @@ export default function About () {
 
     return (
         <section id="about">
-            <h2>About</h2>
+            <h2 tabindex="0">About</h2>
         <div className='aboutText'>
         <p>Nice to meet you! I'm Ying. </p>
         <p>I am a self-taught front-end developer located in the United States. I work with React.js primarily, and I like making cool effects with CSS. While my focus is on the technical side, my experience as an art major helps with UI and color.</p>
