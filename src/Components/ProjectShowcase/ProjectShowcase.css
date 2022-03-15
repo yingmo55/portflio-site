@@ -3,8 +3,18 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    align-items: center;
     width: 100%;
     padding: 10vh 0;
+}
+
+.recentWorks {
+    margin: 10px;;
+    line-height: 1.6;
+}
+
+.recentWorks a {
+    font-size: inherit;
 }
 
 #showcase {
