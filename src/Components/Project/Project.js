@@ -14,7 +14,7 @@ const bgImage = {
             <div className="project-preview" style={bgImage} tabindex="0">
             <div className='projectLink'><a className='link-to-project' href={liveLink}>Live</a> <a className='link-to-project' href={codeLink}>Code</a></div>
             </div>
-            <h3>{title}</h3>
+            <h4>{title}</h4>
             <p>{desc}</p>
             <p className='techs'><strong>Technologies:</strong> <span>{tech.map(element=> element + ' ')}</span>
             </p>
