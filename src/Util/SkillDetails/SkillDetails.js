@@ -12,8 +12,10 @@ const languageClass = new SkillDetails('Languages', 'I can code in...');
 const frameworkClass = new SkillDetails('Frameworks', 'I use these frameworks...');
     frameworkClass.skills = ['React', faReact];
     frameworkClass.skills = ['Tailwind CSS'];
-    frameworkClass.skills = ['Redux', faReact];
     frameworkClass.skills = ['Bootstrap', faBootstrap];
+    frameworkClass.skills = ['Next.js'];
+    frameworkClass.skills = ['Gatsby.js'];
+    frameworkClass.skills = ['Cypress'];
     frameworkClass.skills = ['Jest'];
 
 const toolsClass = new SkillDetails('Tools', 'I use these tools and software for development...');
