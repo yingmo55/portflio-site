@@ -12,12 +12,17 @@ const bgImage = {
     return (
         <section className="project">
             <div className="project-preview" style={bgImage} tabindex="0">
-            <div className='projectLink'><a className='link-to-project' href={liveLink}>Live</a> <a className='link-to-project' href={codeLink}>Code</a></div>
+            <div className='projectLink'>
+                <a className='link-to-project' href={liveLink}>Live</a> 
+                {codeLink &&
+                    <a className='link-to-project' href={codeLink}>Code</a>}
+            </div>
             </div>
             <h4>{title}</h4>
             <p>{desc}</p>
-            <p className='techs'><strong>Technologies:</strong> <span>{tech.map(element=> element + ' ')}</span>
-            </p>
+            {tech.length >= 1 &&
+                <p className='techs'><strong>Technologies:</strong> <span>{tech.map(element=> element + ' ')}</span></p>}
+
         </section>
     )
 }
