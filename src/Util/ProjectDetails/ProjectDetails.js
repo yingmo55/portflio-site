@@ -3,6 +3,8 @@ import calculatorPreview from '../../assets/images/previews/calculator.jpg';
 import todoListPreview from '../../assets/images/previews/todo-list.jpg';
 import whatToLearnPreview from '../../assets/images/previews/Which-language-first.jpg';
 import sketchHubPreview from '../../assets/images/previews/sketchHub.jpg';
+import phlaskPreview from '../../assets/images/previews/phlask.jpg';
+import TaxproNetworkPreview from '../../assets/images/previews/taxpro_network.jpg';
 
 // name, tools=[], previewSrc, shortDescription, longDescription='', liveLink='', codeLink=''
 
@@ -35,5 +37,22 @@ const sketchHub = projectDetails('sketchHub - Responsive Club Page',
                                     'https://github.com/yingmo55/Responsive-website-sketchbub')
 
 
+const phlask = projectDetails('PHLASK - Map for accessible water tap and resource in Philadelpha',
+                                [],
+                                phlaskPreview,
+                                'Contribution: Unit Testing and Components',
+                                'https://phlask.me/',
+                                'https://github.com/phlask/phlask-map'
+)
+
+const taxproNetwork = projectDetails('Taxpro Network',
+                                    ['React', 'Gatsby.js', 'Tailwind CSS'],
+                                    TaxproNetworkPreview,
+                                    'Design & Code | website for a local business',
+                                    'https://taxpro-preview-0a34dc.netlify.app/',
+)
+
 
 export const projects = [ calculator, todoList, whatToLearn, sketchHub];
+export const openSource = [phlask];
+export const freelance = [taxproNetwork];
